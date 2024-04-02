@@ -64,7 +64,7 @@ resource "vsphere_virtual_machine" "vm" {
     template_uuid = data.vsphere_virtual_machine.template.id
     customize {
       dynamic "windows_options" {
-      for_each = var.guest_id == "windows2019srvNext_64Guest" ? [1] : []
+        for_each = var.guest_id == "windows2019srvNext_64Guest" ? [1] : []
         content {
           computer_name = var.name
         }
@@ -74,7 +74,7 @@ resource "vsphere_virtual_machine" "vm" {
         for_each = var.guest_id == "ubuntu64Guest" ? [1] : []
         content {
           host_name = var.name
-          domain = var.domain
+          domain    = var.domain
         }
       }
 

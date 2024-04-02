@@ -29,7 +29,7 @@ variable "name" {
 
 variable "domain" {
   description = "The domain name for this machine."
-  default = ""
+  default     = ""
   type        = string
 }
 

@@ -20,7 +20,7 @@ module "example_windows1" {
   name = "EXAMPLE-WINDOWS1"
 
   template_name = "Win 2022 Datacenter"
-  guest_id = "windows2019srvNext_64Guest"
+  guest_id      = "windows2019srvNext_64Guest"
 
   ip          = "192.168.1.10"
   netmask     = "32"
